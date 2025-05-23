@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Casino Chat</title>
+</head>
+<body>
+  <h1>Chat de prueba - Bet22</h1>
+  <p>Este es un entorno de prueba para simular cómo funcionaría la atención con IA.</p>
+
+  <script>
+    (function(d,t) {
+      var BASE_URL="https://app.chatwoot.com";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
+        window.chatwootSDK.run({
+          websiteToken: 'REEMPLAZAR_POR_TU_TOKEN',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
+  </script>
+
+</body>
+</html>
